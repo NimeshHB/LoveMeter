@@ -10,7 +10,7 @@ export default function Footer() {
               © <Link href="/developer" className="hover:text-violet-600 transition-colors underline decoration-violet-300 underline-offset-4">Nimesh H Bandara</Link> | 2026
             </p>
             <p className="text-[10px] md:text-xs text-slate-400">
-              Develop for entertainment purpose only
+              Developed for entertainment purposes only.
             </p>
           </div>
 

@@ -404,7 +404,7 @@ export default function ResultsSection({ score, maxScore, percentage, message, c
                 </div>
                 <div className="pt-3 md:pt-4 border-t border-white/20">
                   <p className="text-[9px] md:text-[10px] opacity-70">
-                    © Nimesh H Bandara | 2026 - Develop for entertainment purpose only
+                    © Nimesh H Bandara | 2026 - Developed for entertainment purposes only.
                   </p>
                 </div>
               </div>
