@@ -183,6 +183,9 @@ export default function Home() {
 
       setTotalScore(totalPoints)
       setIsSubmitted(true)
+
+      // Scroll to top when results are shown
+      window.scrollTo({ top: 0, behavior: "smooth" })
     }
   }
 
@@ -287,7 +290,10 @@ export default function Home() {
             percentage={scoreCalculation.percentage}
             message={scoreCalculation.message}
             category={scoreCalculation.category}
-            onBack={() => setIsSubmitted(false)}
+            onBack={() => {
+              setIsSubmitted(false)
+              window.scrollTo({ top: 0, behavior: "smooth" })
+            }}
           />
         )}
       </main>

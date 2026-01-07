@@ -42,7 +42,7 @@ export default function DeveloperPage() {
                             <h1 className="text-3xl md:text-6xl font-bold tracking-tight">
                                 Nimesh H <span className="block md:inline bg-gradient-to-r from-rose-400 to-violet-500 bg-clip-text text-transparent">Bandara</span>
                             </h1>
-                            <p className="text-lg md:text-xl text-slate-300 font-medium px-4 md:px-0">Vibbe coder | Brand identity & UI/UX Designer</p>
+                            <p className="text-lg md:text-xl text-slate-300 font-medium px-4 md:px-0">Vibe coder | Brand identity & UI/UX Designer</p>
                             <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 pt-2">
                                 <a href="#" className="p-2.5 md:p-3 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 transition-colors shadow-lg shadow-rose-500/10 active:scale-95">
                                     <Github className="w-5 h-5" />
