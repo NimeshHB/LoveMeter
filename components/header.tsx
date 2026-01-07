@@ -36,15 +36,8 @@ export default function Header({ onReset, inputValue, onInputChange }: HeaderPro
               </div>
             </div>
 
-            {/* Actions */}
+            {/* Actions removed from here */}
             <div className="flex gap-2 items-center w-full sm:w-auto justify-center">
-              <Button
-                onClick={onReset}
-                className="bg-white/60 hover:bg-white/80 text-violet-700 border-2 border-white/80 rounded-full px-5 py-2 h-9 shadow-lg backdrop-blur-md font-bold text-xs md:text-sm"
-              >
-                <RotateCcw className="w-3.5 h-3.5 mr-1.5" />
-                Reset
-              </Button>
             </div>
           </div>
         </div>
@@ -120,8 +113,8 @@ export default function Header({ onReset, inputValue, onInputChange }: HeaderPro
             </div>
 
             {/* CTA */}
-            <div className="pt-4 px-4">
-              <a href="#questions" className="block sm:inline-block">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="#questions" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto group relative px-8 py-4 md:px-10 md:py-5 bg-gradient-to-r from-rose-400 via-pink-400 to-violet-400 rounded-2xl md:rounded-full font-bold text-white text-base md:text-lg shadow-2xl shadow-purple-400/60 hover:shadow-purple-500/80 transition-all hover:scale-105 active:scale-95">
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     Start Your Journey
@@ -129,27 +122,35 @@ export default function Header({ onReset, inputValue, onInputChange }: HeaderPro
                   </span>
                 </button>
               </a>
-              <p className="text-xs md:text-sm text-slate-500 mt-4">
-                Free • No signup required • Instant results
-              </p>
+
+              <Button
+                onClick={onReset}
+                className="w-full sm:w-auto bg-white/60 hover:bg-white/80 text-violet-700 border-2 border-white/80 rounded-2xl md:rounded-full px-8 py-4 md:px-10 md:py-5 h-auto shadow-lg backdrop-blur-md font-bold text-base md:text-lg transition-all hover:scale-105 active:scale-95"
+              >
+                <RotateCcw className="w-5 h-5 mr-2" />
+                Reset
+              </Button>
             </div>
+            <p className="text-xs md:text-sm text-slate-500 mt-4">
+              Free • No signup required • Instant results
+            </p>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Wave */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-            <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#wave-gradient)" fillOpacity="0.3" />
-            <path d="M0,96L48,90.7C96,85,192,75,288,74.7C384,75,480,85,576,85.3C672,85,768,75,864,69.3C960,64,1056,64,1152,69.3C1248,75,1344,85,1392,90.7L1440,96L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#wave-gradient)" fillOpacity="0.5" />
-            <defs>
-              <linearGradient id="wave-gradient" x1="0" y1="0" x2="1440" y2="0">
-                <stop offset="0%" stopColor="#f472b6" />
-                <stop offset="50%" stopColor="#a855f7" />
-                <stop offset="100%" stopColor="#ec4899" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+      {/* Bottom Wave */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#wave-gradient)" fillOpacity="0.3" />
+          <path d="M0,96L48,90.7C96,85,192,75,288,74.7C384,75,480,85,576,85.3C672,85,768,75,864,69.3C960,64,1056,64,1152,69.3C1248,75,1344,85,1392,90.7L1440,96L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#wave-gradient)" fillOpacity="0.5" />
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" y1="0" x2="1440" y2="0">
+              <stop offset="0%" stopColor="#f472b6" />
+              <stop offset="50%" stopColor="#a855f7" />
+              <stop offset="100%" stopColor="#ec4899" />
+            </linearGradient>
+          </defs>
+        </svg>
       </div>
     </header>
   )

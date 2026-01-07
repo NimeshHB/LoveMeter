@@ -308,7 +308,6 @@ export default function ResultsSection({ score, maxScore, percentage, message, c
                   {percentage}%
                 </span>
                 <span className="text-xs md:text-sm text-slate-700 mt-1 md:mt-2 font-bold text-center px-4">{rankBadge.title}</span>
-                <span className="text-[10px] md:text-xs text-violet-600 mt-0.5 md:mt-1">{rankBadge.subtitle}</span>
               </div>
             </div>
           </div>
@@ -377,7 +376,6 @@ export default function ResultsSection({ score, maxScore, percentage, message, c
                 <div className="text-6xl md:text-8xl mb-3 md:mb-4">{rankBadge.emoji}</div>
                 <p className="text-xl md:text-2xl font-bold mb-2 md:mb-3">{percentage}%</p>
                 <p className="text-lg md:text-xl font-bold mb-1 md:mb-2">{rankBadge.title}</p>
-                <p className="text-sm md:text-base opacity-90">{rankBadge.subtitle}</p>
               </div>
 
               {/* Message Box */}

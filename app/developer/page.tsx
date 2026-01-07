@@ -42,7 +42,9 @@ export default function DeveloperPage() {
                             <h1 className="text-3xl md:text-6xl font-bold tracking-tight">
                                 Nimesh H <span className="block md:inline bg-gradient-to-r from-rose-400 to-violet-500 bg-clip-text text-transparent">Bandara</span>
                             </h1>
-                            <p className="text-lg md:text-xl text-slate-300 font-medium px-4 md:px-0">Vibe coder | Brand identity & UI/UX Designer</p>
+                            <p className="text-lg md:text-xl text-slate-300 font-medium px-4 md:px-0 uppercase tracking-widest">
+                                Vibe Coder | Frontend Designer | Brand Identity & UI/UX Designer
+                            </p>
                             <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4 pt-2">
                                 <a href="#" className="p-2.5 md:p-3 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 transition-colors shadow-lg shadow-rose-500/10 active:scale-95">
                                     <Github className="w-5 h-5" />
@@ -66,9 +68,10 @@ export default function DeveloperPage() {
                             <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-rose-500/20 flex items-center justify-center border border-rose-500/20 group-hover:scale-110 transition-transform">
                                 <Code2 className="w-5 h-5 md:w-6 md:h-6 text-rose-400" />
                             </div>
-                            <h3 className="text-xl md:text-2xl font-bold">About Me</h3>
-                            <p className="text-sm md:text-base text-slate-400 leading-relaxed">
-                                I'm a passionate developer dedicated to creating high-quality web applications with stunning user interfaces and seamless experiences. Specialized in modern technologies like Next.js, React, and Tailwind CSS.
+                            <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-rose-400 to-violet-400 bg-clip-text text-transparent">Who I Am</h3>
+                            <p className="text-sm md:text-base text-slate-300 leading-relaxed font-light">
+                                <span className="text-white font-bold block mb-2 text-lg">I am a Vibe Coder & Frontend Designer</span>
+                                Passionate about crafting digital identities and seamless user experiences. Specializing in <span className="text-violet-400">Brand Identity</span> and <span className="text-rose-400">UI/UX Design</span>, I transform complex ideas into elegant, vibey, and highly functional web solutions.
                             </p>
                         </div>
 
